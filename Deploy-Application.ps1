@@ -58,12 +58,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Bomgar'
 	[string]$appName = 'Representative Console'
-	[string]$appVersion = '15.2.2'
+	[string]$appVersion = '17.1.5'
 	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '12/19/2016'
+	[string]$appScriptDate = '5/24/2018'
 	[string]$appScriptAuthor = 'Metropolitan State University of Denver'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
@@ -132,7 +132,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-MSI -Action "Install" -Path "bomgar-rep-win64-installer.msi" -Parameters "SHOULDAUTOUPDATE=1 REBOOT=ReallySuppress /QN" -SkipMSIAlreadyInstalledCheck $true -PassThru
+		Execute-MSI -Action "Install" -Path "bomgar-rep-win64-installer.msi" -Parameters "ALLUSERS=1 REBOOT=ReallySuppress /QN" -PassThru
 
 		##*===============================================
 		##* POST-INSTALLATION
