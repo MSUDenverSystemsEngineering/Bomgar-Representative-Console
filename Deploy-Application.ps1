@@ -58,12 +58,12 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Bomgar'
 	[string]$appName = 'Representative Console'
-	[string]$appVersion = '17.1.5'
+	[string]$appVersion = '19.2.1'
 	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
-	[string]$appScriptDate = '5/24/2018'
+	[string]$appScriptDate = '12/18/2019'
 	[string]$appScriptAuthor = 'Metropolitan State University of Denver'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
